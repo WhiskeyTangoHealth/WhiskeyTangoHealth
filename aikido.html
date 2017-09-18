@@ -215,33 +215,27 @@
     <!--  script for the find your class thing -->
     <script>
     function skill () {
-      var i = [1,3,4,5];
-      var skills = document.getElementByTagName("input");
-
+     
+	  var skills =["beginner","advance","chuck"];
+      document.getElementByTagName("input").innerHTML = skills[i];
       while(skills[i].checked){
+	    
         if skill == document.getElementById("begin").checked {
           alert("Beginner = M W F Evenings 6:00 P.M. -7:00 P.M.");
-
         }
         if skills == document.getElementById("advance").checked {
-          alert("Advance Class M W F Evenings 7:00 P.M. – 8:00 P.M.")
-
+          alert("Advance Class M W F Evenings 7:00 P.M. – 8:00 P.M.");
         }
         if skills == document.getElementById("chuck").checked {
-          alert ("Chuck Norris hides from NOBODY!")
-
+          alert("Chuck Norris hides from NOBODY!");
         }
 	i++;
       }
-
       var submit == document.getElementById("submitButton");
-
       if (submitbutton.addEventListener){
         submitButton.addEventListener("click", skill, false);
       }
-
     }
-
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
