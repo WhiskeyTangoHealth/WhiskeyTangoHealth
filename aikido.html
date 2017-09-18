@@ -131,6 +131,9 @@
                 </div>
 
                 <div>
+                  <form class="" action="index.html" method="post">
+
+                  </form>
                   <form id="radioClassButtonTwo">
                     <input type="radio" id="1" name="exp" value="1">  "I have never taken a martial art." <br>
                     <input type="radio" id="2" name="exp" value="2">  "I have a little experience." <br>
@@ -138,8 +141,10 @@
                   </form>
                     <!--submitButton for radio buttons-->
                     <p><a id="submitButton" class="btn btn-custom1" onclick="displayCheck()" role="button">Find your next class! &raquo;</a></p>
-                    <!--display area-->
-                    <h3 id="display"><br>this<br></h3>
+
+                    <!--display area for debugging purpises
+                    <h3 id="display"><br>this<br></h3>-->
+
                     <!--little samurai button-->
                     <button id="submitButton2" onclick="alert('You are in the youth class Class Times: Wednesdays 4:00P.M. to 5:30P.M. or Saturday from 9:00 A.M. to 10:30 A.M')" id="youth" name="age" class="btn btn-custom1" value ="youth class time">Little Samurais
                 </div>
@@ -220,49 +225,19 @@
     <script>
     /*~~~~~~~~~~~~~~~~~~~function to assign a value to var proofCheck~~~~~~~~~~~~~~~~~~~~~*/
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~also displays proofCheck~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    var displayId = ['Beginner Classes M W F Evenings 6:00 P.M. - 7:00 P.M.','Advanced Classes M W F Evenings 7:00 P.M. – 8:00 P.M.','Chuck Norris has now been notified of your claim. Don\'t bother running, you\'ll just die tired.','Please make a selection first']
 
-        var displayId
-
-        function displayCheck(){
-          if (document.getElementById('1').checked) {
-            displayId = 1;
-            alert("Beginner Classes M W F Evenings 6:00 P.M. - 7:00 P.M.");
-            document.getElementById('display').innerHTML = displayId;
-          } else if(document.getElementById('2').checked) {
-            displayId = 2;
-            alert("Advanced Classes M W F Evenings 7:00 P.M. – 8:00 P.M.");
-            document.getElementById('display').innerHTML = displayId;
-          } else if(document.getElementById('3').checked){
-            displayId = 3;
-            alert("Chuck Norris has now been notified of your claim. Don't bother running, you'll just die tired.");
-            document.getElementById('display').innerHTML = displayId;
-          } else {
-            displayId = 4;
-            alert("Please make a selection first")
-          }
-        }
-
-
-        /*function skill() {
-
-          var skills =[1,2,3];
-          document.getElementByTagName("input").innerHTML = skills[i];
-
-          while(skills[i].checked){
-            if (skills[i] == document.getElementById("1").checked) {
-              alert("Beginner Class M W F Evenings 6:00 P.M. - 7:00 P.M.");
-            } else if (skills[i] == document.getElementById("2").checked) {
-              alert("Advance Class M W F Evenings 7:00 P.M. – 8:00 P.M.");
-            } else {
-              alert("Chuck Norris has now been notified of your claim. Don't bother running, you'll just die tired.");
+           function displayCheck(){
+              if (document.getElementById('1').checked) {
+                  alert(displayId[0]);
+              } else if(document.getElementById('2').checked) {
+                  alert(displayId[1]);
+              } else if(document.getElementById('3').checked){
+                  alert(displayId[2]);
+              } else {
+                alert(displayId[3])
+              }
             }
-            i++;
-          }
-          var submit == document.getElementById("submitButton");
-          if (submitbutton.addEventListener){
-            submitButton.addEventListener("click", skill, false);
-          }
-        }*/
         </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
