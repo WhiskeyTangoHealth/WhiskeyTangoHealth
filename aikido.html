@@ -221,16 +221,23 @@
     /*~~~~~~~~~~~~~~~~~~~function to assign a value to var proofCheck~~~~~~~~~~~~~~~~~~~~~*/
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~also displays proofCheck~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
+        var displayId
 
         function displayCheck(){
           if (document.getElementById('1').checked) {
-            alert("Beginner Class M W F Evenings 6:00 P.M. - 7:00 P.M.");
+            displayId = 1;
+            alert("Beginner Classes M W F Evenings 6:00 P.M. - 7:00 P.M.");
+            document.getElementById('display').innerHTML = displayId;
           } else if(document.getElementById('2').checked) {
-            alert("Advance Class M W F Evenings 7:00 P.M. – 8:00 P.M.");
+            displayId = 2;
+            alert("Advanced Classes M W F Evenings 7:00 P.M. – 8:00 P.M.");
+            document.getElementById('display').innerHTML = displayId;
           } else if(document.getElementById('3').checked){
+            displayId = 3;
             alert("Chuck Norris has now been notified of your claim. Don't bother running, you'll just die tired.");
+            document.getElementById('display').innerHTML = displayId;
           } else {
+            displayId = 4;
             alert("Please make a selection first")
           }
         }
