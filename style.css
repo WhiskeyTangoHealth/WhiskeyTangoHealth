@@ -62,7 +62,7 @@ a.none:hover {text-decoration: none;}
 
 @media (min-width:769px) {
     .boxes_area div[class*="col-"]:after {content: " ";display: block;position: absolute;top: 0;right: 0;width: 1px;height: 100%;background-color: #ebebeb;}
-    .boxes_area div[class*="col-"]:last-child:after {display: none;}    
+    .boxes_area div[class*="col-"]:last-child:after {display: none;}
 }
 
 /* Home */
@@ -178,13 +178,13 @@ ul.big li:nth-child(2n) {margin-left: 2%;}
     /*.boxes_area .row {margin-left: -20px;margin-right: -20px;}*/
     .boxes_area .box p {margin-bottom: 30px;}
     .services .media .media-left {padding-right: 15px;}
-    
+
     .category-content .media-body {float: left;position: relative;width: 100%;}
     .category-content .media-body h3 {margin-top: 20px;}
     .category-main .meta {position: relative;width: 100%;}
     .category-main .meta .pull-left {margin-left: 40px;}
     .category-main .meta .pull-right {display: none;}
-    
+
     .sidebar {margin-top: 40px;}
 }
 @media (min-width:463px) and (max-width:768px) {
@@ -242,4 +242,12 @@ ul.big li:nth-child(2n) {margin-left: 2%;}
 .test2{
 	font-family: 'Ubuntu', sans-serif;
 	color: #15130C;
+}
+
+/*~~~~~~~ID Values *aikido page*~~~~~~~~~*/
+#radioClassButtonOne{
+  color: black;
+}
+#radioClassButtonTwo{
+  color: black;
 }
