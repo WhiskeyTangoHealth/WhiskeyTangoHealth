@@ -237,6 +237,7 @@ ul.big li:nth-child(2n) {margin-left: 2%;}
 	background: #E0C75A;
 	font-family: 'Fjalla One', sans-serif;
 	color: black;
+  float:left;
 }
 
 .test2{
@@ -245,9 +246,10 @@ ul.big li:nth-child(2n) {margin-left: 2%;}
 }
 
 /*~~~~~~~ID Values *aikido page*~~~~~~~~~*/
-#radioClassButtonOne{
-  color: black;
+#submitButton2{
+  float:right;
 }
 #radioClassButtonTwo{
   color: black;
+  margin-bottom: 10px;
 }
