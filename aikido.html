@@ -132,12 +132,16 @@
 
                 <div>
                   <form id="radioClassButtonTwo">
-                    <input id="begin" type="radio" name="exp" value="3">  "I have never taken a martial art." <br>
-                    <input id="advance" type="radio" name="exp" value="4">  "I have a little experience." <br>
-                    <input id="chuck" type="radio" name="exp" value="5">  "Chuck Norris checks under his bed for me at night."<br><br>
-                    <p><a id="submitButton" class="btn btn-custom1" onclick="skill()" role="button">Find your next class! &raquo;</a></p>
-                    <p><button id="submitButton2" onclick="alert('You are in the youth class Class Times: Wednesdays 4:00P.M. to 5:30P.M. or Saturday from 9:00 A.M. to 10:30 A.M')" id="youth" name="age" class="btn btn-custom1" value ="youth class time">  "I am under 13 years old*"<br><p>
+                    <input type="radio" id="1" name="exp" value="1">  "I have never taken a martial art." <br>
+                    <input type="radio" id="2" name="exp" value="2">  "I have a little experience." <br>
+                    <input type="radio" id="3" name="exp" value="3">  "Chuck Norris checks under his bed for me at night."<br><br>
                   </form>
+                    <!--submitButton for radio buttons-->
+                    <p><a id="submitButton" class="btn btn-custom1" onclick="displayCheck()" role="button">Find your next class! &raquo;</a></p>
+                    <!--display area-->
+                    <h3 id="display"><br>this<br></h3>
+                    <!--little samurai button-->
+                    <button id="submitButton2" onclick="alert('You are in the youth class Class Times: Wednesdays 4:00P.M. to 5:30P.M. or Saturday from 9:00 A.M. to 10:30 A.M')" id="youth" name="age" class="btn btn-custom1" value ="youth class time">Little Samurais
                 </div>
 
 
@@ -214,29 +218,45 @@
     </footer>
     <!--  script for the find your class thing -->
     <script>
-    function skill () {
-     
-	  var skills =["beginner","advance","chuck"];
-      document.getElementByTagName("input").innerHTML = skills[i];
-      while(skills[i].checked){
-	    
-        if skill == document.getElementById("begin").checked {
-          alert("Beginner = M W F Evenings 6:00 P.M. -7:00 P.M.");
+    /*~~~~~~~~~~~~~~~~~~~function to assign a value to var proofCheck~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~also displays proofCheck~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+        function displayCheck(){
+          if (document.getElementById('1').checked) {
+            alert("Beginner Class M W F Evenings 6:00 P.M. - 7:00 P.M.");
+          } else if(document.getElementById('2').checked) {
+            alert("Advance Class M W F Evenings 7:00 P.M. – 8:00 P.M.");
+          } else if(document.getElementById('3').checked){
+            alert("Chuck Norris has now been notified of your claim. Don't bother running, you'll just die tired.");
+          } else {
+            alert("Please make a selection first")
+          }
         }
-        if skills == document.getElementById("advance").checked {
-          alert("Advance Class M W F Evenings 7:00 P.M. – 8:00 P.M.");
-        }
-        if skills == document.getElementById("chuck").checked {
-          alert("Chuck Norris hides from NOBODY!");
-        }
-	i++;
-      }
-      var submit == document.getElementById("submitButton");
-      if (submitbutton.addEventListener){
-        submitButton.addEventListener("click", skill, false);
-      }
-    }
-    </script>
+
+
+        /*function skill() {
+
+          var skills =[1,2,3];
+          document.getElementByTagName("input").innerHTML = skills[i];
+
+          while(skills[i].checked){
+            if (skills[i] == document.getElementById("1").checked) {
+              alert("Beginner Class M W F Evenings 6:00 P.M. - 7:00 P.M.");
+            } else if (skills[i] == document.getElementById("2").checked) {
+              alert("Advance Class M W F Evenings 7:00 P.M. – 8:00 P.M.");
+            } else {
+              alert("Chuck Norris has now been notified of your claim. Don't bother running, you'll just die tired.");
+            }
+            i++;
+          }
+          var submit == document.getElementById("submitButton");
+          if (submitbutton.addEventListener){
+            submitButton.addEventListener("click", skill, false);
+          }
+        }*/
+        </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     </div> <!-- /container -->
