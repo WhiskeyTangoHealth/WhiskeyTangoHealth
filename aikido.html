@@ -123,22 +123,24 @@
 								<img src="img/OSensei.PNG" height = "220" width = "215">
 							</div>
 							<h2>Our Classes</h2>
-							<p class="test2">We've got  beginner level, advanced level, weapons class, and of course, our "little samurai's" program. If you're over the age of 6, you're the perfect age to learn the art of peace.</p>
 
               <!--radio buttons for week two assignment-->
-							<p class="test2">We've got  beginner level, advanced level, weapons class, and of course, our "little samurai's" program. If you're over the age of 6, you're the perfect age to learn the art of peace.</p>
-                <form id="radioClassButtonOne">
-                  <input type="radio" name="age" value="1">  "I am under 13 years old*"<br>
-                  <input type="radio" name="age">  "I am 13+*" <br>
-                  <strong>*Students under 18 shall be accompanied by a parent or legal guardian, and remain for class*</strong> <br><br>
-                </form>
-                <form id="radioClassButtonTwo">
-                  <input type="radio" name="exp" value="3">  "I have never taken a martial art." <br>
-                  <input type="radio" name="exp" value="4">  "I have a little experience." <br>
-                  <input type="radio" name="exp" value="5">  "Chuck Norris checks under his bed for me at night."<br><br>
-                </form>
+                <div>
+                  <p class="test2">We've got  beginner level, advanced level, weapons class, and of course, our "little samurai's" program. If you're over the age of 6, you're the perfect age to learn the art of peace.</p>
+                  <p style="font-weight:bold">*Students under 18 shall be accompanied by a parent or legal guardian, and remain for class*</p>
+                </div>
 
-							<p><a class="btn btn-custom1" href="https://aikidoshinjukai.com/adult-class/" target="_blank" role="button">View details &raquo;</a></p>
+                <div>
+                  <form id="radioClassButtonTwo">
+                    <input id="begin" type="radio" name="exp" value="3">  "I have never taken a martial art." <br>
+                    <input id="advance" type="radio" name="exp" value="4">  "I have a little experience." <br>
+                    <input id="chuck" type="radio" name="exp" value="5">  "Chuck Norris checks under his bed for me at night."<br><br>
+                    <p><a id="submitButton" class="btn btn-custom1" onclick="skill()" role="button">Find your next class! &raquo;</a></p>
+                    <p><button id="submitButton2" onclick="alert('You are in the youth class Class Times: Wednesdays 4:00P.M. to 5:30P.M. or Saturday from 9:00 A.M. to 10:30 A.M')" id="youth" name="age" class="btn btn-custom1" value ="youth class time">  "I am under 13 years old*"<br><p>
+                  </form>
+                </div>
+
+
 						</div>
 						<div class="col-md-4">
 							<div class="rowThreeImage">
@@ -210,17 +212,35 @@
             </div>
         </div>
     </footer>
-
     <!--  script for the find your class thing -->
     <script>
-          /*2 is a dummy button. not necessary to include in calculations */
-          var stuVal = [1, 3, 4, 5]
-          /*~~~~self adjusting iteration through list~~~~~*/
-          for (var i = 0; i < stuVal.length; i++) {
-            array[i]
-          }
+    function skill () {
+      var skills = document.getElementByTagName("input");
+
+      while(skills[i].checked){
+        if skill = document.getElementById("begin").checked {
+          alert("Beginner = M W F Evenings 6:00 P.M. -7:00 P.M.");
+
+        }
+        if skills = document.getElementById("advance").checked {
+          alert("Advance Class M W F Evenings 7:00 P.M. – 8:00 P.M.")
+
+        }
+        if skills = document.getElementById("chuck").checked {
+          alert ("Chuck Norris hides from NOBODY!")
+
+        }
+      }
+
+      var submit = document.getElementById("submitButton");
+
+      if (submitbutton.addEventListener){
+        submitButton.addEventListener("click", skill, false);
+      }
+
+    }
+
     </script>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     </div> <!-- /container -->
