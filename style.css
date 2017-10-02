@@ -195,7 +195,7 @@ ul.big li:nth-child(2n) {margin-left: 2%;}
 /*Sam's super awesome css*/
 .jumbotron{
 	background-color: #745E2E;
-	font-family: 'Raleway', sans-serif;;
+	font-family: 'Raleway', sans-serif;
 }
 .bottomBackground{
 	background-color: #6c782e;
@@ -244,11 +244,22 @@ ul.big li:nth-child(2n) {margin-left: 2%;}
 	color: #15130C;
 }
 
+.senpaisCorner{
+  margin: auto;
+
+  text-align: center;
+  color: #1C0A02;
+  font-family: 'Cantora One', sans-serif;
+}
 /*~~~~~~~ID Values *aikido page*~~~~~~~~~*/
 #submitButton2{
-
+ margin-bottom: 10px;
 }
 #radioClassButtonTwo{
   color: black;
   margin-bottom: 10px;
+}
+#heWho{
+  border-radius: 25px;
+  box-shadow: 4px 4px 4px #282828;
 }
