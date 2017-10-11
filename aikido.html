@@ -144,13 +144,9 @@
                     <input type="radio" id="3" name="exp" value="3">  "Chuck Norris checks under his bed for me at night."<br><br>
                   </form>
                     <!--submitButton for radio buttons-->
-                    <p><a id="submitButton" class="btn btn-custom1" onclick="displayCheck()" role="button">Find your next class! &raquo;</a></p>
-
-                    <!--display area for debugging purposes
-                    <h3 id="display"><br>this<br></h3>-->
-
+                    <p><a id="submitButton" class="btn btn-custom1"  role="button">Find your next class! &raquo;</a></p>
                     <!--little samurai button-->
-                    <button id="submitButton2" onclick="alert('Class times for Little Samurai:\n\nWednesdays 4:00P.M. to 5:30P.M.\n\nSaturday from 9:00 A.M. to 10:30 A.M')" id="youth" name="age" class="btn btn-custom1" value ="youth class time">Little Samurais
+                    <button id="submitButton2" name="age" class="btn btn-custom1" value ="youth class time">Little Samurais
                 </div>
 
 
@@ -162,6 +158,44 @@
 							<h2>FAQ</h2>
 							<p class="test2">If you're new to any martial art, you will always have questions. Fortunately, you are not alone! Everyone has a first day. With the help of this FAQ, you'll get over your jitters, and go from outsider to a brother/sister in arms in no time!</p>
 							<p><a class="btn btn-custom1" href="https://www.amazon.com/Beginners-Guide-Aikido-Larry-Reynosa/dp/0962526908" target="_blank" role="button">View details &raquo;</a></p>
+              <h2>Win 2 free weeks!</h2>
+              <p class="freeWeek">*drawings held on the 3rd Wednesday of the month</p>
+
+<div class="freeWeek">
+              <div class="form-group">
+                <label class="control-label col-sm-2" id="nameLabel" for="name">Name: </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="name" placeholder="Enter name (first, last)">
+                </div>
+              </div>
+             <div class="form-group">
+               <label class="control-label col-sm-2" id="emailLabel" for="email">Email: </label>
+               <div class="col-sm-10">
+                 <input type="email" class="form-control" id="email" placeholder="Enter email">
+               </div>
+             </div>
+             <div class="form-group">
+               <label class="control-label col-sm-2" id="phoneLabel" for="pwd">Phone: </label>
+               <div class="col-sm-10">
+                 <input type="tel" class="form-control" id="tel" placeholder="Enter phone number">
+               </div>
+             </div>
+             <div class="form-group">
+               <div class="col-sm-offset-2 col-sm-10">
+                 <div class="checkbox">
+                   <label><input type="radio" name="age" id="ofAge" value="true"> I'm 18 years of age</label>
+                   <label><input type="radio" name="age" id="notOfAge" value="false"> I'm not old enough to vote</label>
+                 </div>
+               </div>
+             </div>
+             <div class="form-group">
+               <div class="col-sm-offset-2 col-sm-10">
+                 <button type="submit" id="modalSubmit" class="btn btn-custom1">Submit</button>
+               </div>
+             </div>
+</div>
+
+
 						</div>
 					</div>
 				</div>
