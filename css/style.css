@@ -192,7 +192,7 @@ ul.big li:nth-child(2n) {margin-left: 2%;}
     .fbox:nth-child(3) {float: right !important;}
 }
 
-/*Sam's super awesome css*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Sam's super awesome css*/
 .jumbotron{
 	background-color: #745E2E;
 	font-family: 'Raleway', sans-serif;
@@ -251,9 +251,14 @@ ul.big li:nth-child(2n) {margin-left: 2%;}
   color: #1C0A02;
   font-family: 'Cantora One', sans-serif;
 }
-/*~~~~~~~ID Values *aikido page*~~~~~~~~~*/
+
+.freeWeek {
+  color: black;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~  ID Values *aikido page*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #submitButton2{
- margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 #radioClassButtonTwo{
   color: black;
@@ -262,4 +267,22 @@ ul.big li:nth-child(2n) {margin-left: 2%;}
 #heWho{
   border-radius: 25px;
   box-shadow: 4px 4px 4px #282828;
+}
+#modalSubmit{
+  margin-bottom: 10px;
+}
+#nameLabel{
+  margin-top: 5px;
+}
+#name{
+  margin-bottom: 5px;
+}
+#emailLabel{
+  margin-top: 5px
+}
+#email{
+  margin-bottom: 5px;
+}
+#phoneLabel{
+  margin-top: 5px;
 }
