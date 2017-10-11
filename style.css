@@ -50,7 +50,7 @@ a.none:hover {text-decoration: none;}
 @media screen and (max-width: 992px) {.navbar-toggle {display: block;}.navbar-collapse.collapse {display: none !important;}.main-navbar-nav.navbar-nav,.main-navbar-nav.navbar-nav > li {float: none !important;}.navbar-collapse.collapse.in {display: block !important;overflow-y: auto !important;}}
 
 /* Hero */
-.hero_area {background-image: url(img/hero.jpeg);background-position: center center;background-repeat: no-repeat;background-size: cover;height: 475px;padding: 0;}
+.hero_area {background-image: url(img/hero.jpg);background-position: center center;background-repeat: no-repeat;background-size: cover;height: 475px;padding: 0;}
 .hero_content {padding: 120px 0;}
 .hero_content h1 {text-shadow: 2px 2px 4px rgba(0,0,0,0.75);color: #7d8a35;font-weight: 700;font-size: 42px;}
 .hero_content h2 {text-shadow: 2px 2px 4px rgba(0,0,0,0.25);color: white;font-weight: 700;font-size: 32px;margin-top: 0;width: 45%;line-height: 38px;}
@@ -61,9 +61,9 @@ a.none:hover {text-decoration: none;}
 .box h3 {position: relative;margin-bottom: 20px;padding-bottom: 20px;}
 
 @media (min-width:769px) {
-.boxes_area div[class*="col-"]:after {content: " ";display: block;position: absolute;top: 0;right: 0;width: 1px;height: 100%;background-color: #ebebeb;}
-.boxes_area div[class*="col-"]:last-child:after {display: none;}
-
+    .boxes_area div[class*="col-"]:after {content: " ";display: block;position: absolute;top: 0;right: 0;width: 1px;height: 100%;background-color: #ebebeb;}
+    .boxes_area div[class*="col-"]:last-child:after {display: none;}
+}
 
 /* Home */
 .home_content h2:after,.box h3:after {content: '';position: absolute;width: 30px;background-color: #7d8a35;height: 2px;left: 0;bottom: 0;}
@@ -94,9 +94,9 @@ h2.section-title {text-align: center;color: #404040;}
 .carousel-control{ width:  4%; }
 .carousel-control.left,.carousel-control.right {margin-left:0;background-image:none;}
 
-@media screen and (max-width: 768px) {.carousel-inner .active.left {left: -100%;}.carousel-inner .next {left: 100%;}.carousel-inner .prev {left: -100%;}.active > div {display:none;}.active > div:first-child {display:block;}.navbar-default .navbar-collapse {padding-left: inherit;padding-right: inherit;}}
-@media screen and (max-width: 992px) {.carousel-inner .active.left {left: -50%;}.carousel-inner .next {left:  50%;}.carousel-inner .prev {left: -50%;}.active > div {display:none;}.active > div:first-child {display:block;}.active > div:first-child + div {display:block;}.navbar-default .navbar-collapse {width: 100%;margin-left: 0;margin-right: 0;max-height: none;}}
-@media (min-width: 768px) {.carousel-inner .active.left {left: -25%;}.carousel-inner .next {left: 25%;}.carousel-inner .prev {left: -25%;}.navbar>.container .navbar-brand,.navbar>.container-fluid .navbar-brand {margin-left: 0;}}
+@media (max-width: 767px) {.carousel-inner .active.left {left: -100%;}.carousel-inner .next {left: 100%;}.carousel-inner .prev {left: -100%;}.active > div {display:none;}.active > div:first-child {display:block;}}
+@media (min-width: 767px) and (max-width: 992px ) {.carousel-inner .active.left {left: -50%;}.carousel-inner .next {left:  50%;}.carousel-inner .prev {left: -50%;}.active > div {display:none;}.active > div:first-child {display:block;}.active > div:first-child + div {display:block;}}
+@media (min-width: 992px ) {.carousel-inner .active.left {left: -25%;}.carousel-inner .next {left: 25%;}.carousel-inner .prev {left: -25%;}}
 
 /* Footer */
 footer.site-footer {background: #e6e6e6;padding: 20px 0 0;float: left;width: 100%;}
@@ -203,7 +203,7 @@ ul.big li:nth-child(2n) {margin-left: 2%;}
 .container1{
 	float:left;
 	width:75%;
-	margin-right: 10px;
+	margin-right: 10;
 }
 /*--Dojoname--*/
 .dojoHeader{
@@ -251,7 +251,11 @@ ul.big li:nth-child(2n) {margin-left: 2%;}
   color: #1C0A02;
   font-family: 'Cantora One', sans-serif;
 }
-/*~~~~~~~ID Values *aikido page*~~~~~~~~~*/
+
+.freeWeek {
+  color: black;
+}
+/*~~~~~~~~~~~~~~~~~~~~  ID Values *aikido page*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #submitButton2{
  margin-bottom: 10px;
 }
@@ -262,4 +266,22 @@ ul.big li:nth-child(2n) {margin-left: 2%;}
 #heWho{
   border-radius: 25px;
   box-shadow: 4px 4px 4px #282828;
+}
+#modalSubmit{
+  margin-bottom: 10px;
+}
+#nameLabel{
+  margin-top: 5px;
+}
+#name{
+  margin-bottom: 5px;
+}
+#emailLabel{
+  margin-top: 5px
+}
+#email{
+  margin-bottom: 5px;
+}
+#phoneLabel{
+  margin-top: 5px;
 }
