@@ -133,13 +133,27 @@
 		<div class="col-sm-3">
                   <h3>Best Eating Plan For You</h3>
                      <form>
-                       <input type="radio" name="cleaneating" value="clean"> I prefer whole foods and have plenty of time for meal preparation.  Health is my number one concern.<br>
-                       <input type="radio" name="iifym" value="flexible"> I want to eat what I want and I have no issue with accounting for nutrition information.  I want to lose weight and I am not worried about it taking a bit longer.<br>
-                       <input type="radio" name="keto" value="lowcarb"> I want fast results and I don't mind restricting my diet to get them.<br>
+                       <input type="radio" name="cleaneating" value="clean" id="wholefoods"> I prefer whole foods and have plenty of time for meal preparation.  Health is my number one concern.<br>
+                       <input type="radio" name="iifym" value="flexible" id="everything"> I want to eat what I want and I have no issue with accounting for nutrition information.  I want to lose weight and I am not worried about it taking a bit longer.<br>
+                       <input type="radio" name="keto" value="lowcarb" id="allmeat"> I want fast results and I don't mind restricting my diet to get them.<br>
 		       <br>
-		       <input type="button" name="Submit" value="Submit">
+		       <input type="button" name="Submit" value="Submit" onclick="popUpEatingPlan()" id="button">
                     </form>
                </div>
+		<script>
+ -	function popUpEatingPlan () {
+ -		var clean = document.getElementById("wholefoods");
+	          alert("You should follow the clean eating plan!");
+ -		var flexible = document.getElementById("everything");
+	          alert("You should follow the IIFYM eating plan!");
+ -		var keto = document.getElementById("allmeat");
+	           alert("You should follow the Keto eating plan!"";
+ -	}
+ -	
+ -	document.getElementById("button").
+ -			addEventListener("click", popUpEatingPlan, false);
+ -	
+ -	</script>
         </section>
 	</main>
 	<!-- Footer -->   
